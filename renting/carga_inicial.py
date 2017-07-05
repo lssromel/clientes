@@ -34,5 +34,6 @@ def carga_archivo(ruta_zip,nombre):
 
     df = df.drop_duplicates() # registros duplicados
     df=df.reset_index(drop=True)
+    df=df.fillna("NAN")
    
     return 1,df
